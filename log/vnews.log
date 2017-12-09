@@ -1,0 +1,218 @@
+[14:26:37:849] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on xuantang-cun with PID 25251 (/home/xuantang/IdeaProjects/VNews-SpringBoot/target/classes started by xuantang in /home/xuantang/IdeaProjects/VNews-SpringBoot)
+[14:26:37:852] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[14:26:39:535] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 1.83 seconds (JVM running for 2.327)
+[14:28:55:242] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on xuantang-cun with PID 25775 (/home/xuantang/IdeaProjects/VNews-SpringBoot/target/classes started by xuantang in /home/xuantang/IdeaProjects/VNews-SpringBoot)
+[14:28:55:245] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[14:28:56:773] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 1.692 seconds (JVM running for 2.365)
+[14:29:42:086] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:40) - {"code":400,"message":"fail"}
+[14:29:51:058] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:40) - {"code":400,"message":"fail"}
+[14:29:57:110] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:40) - {"code":400,"message":"fail"}
+[14:31:32:188] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on xuantang-cun with PID 26025 (/home/xuantang/IdeaProjects/VNews-SpringBoot/target/classes started by xuantang in /home/xuantang/IdeaProjects/VNews-SpringBoot)
+[14:31:32:192] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[14:31:33:887] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 1.853 seconds (JVM running for 2.342)
+[14:31:36:876] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:40) - {"code":400,"message":"\n### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1\n### The error may involve com.mobine.vnews.mapper.UserMapper.addUser-Inline\n### The error occurred while setting parameters\n### SQL: INSERT INTO user (username, password, telephone) VALUES (?,?,?,#{telephone)\n### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1\n; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"}
+[14:41:38:903] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on xuantang-cun with PID 26969 (/home/xuantang/IdeaProjects/VNews-SpringBoot/target/classes started by xuantang in /home/xuantang/IdeaProjects/VNews-SpringBoot)
+[14:41:38:905] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[14:41:40:435] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 1.673 seconds (JVM running for 2.159)
+[14:42:10:684] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:45) - {"code":400,"message":"\n### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1\n### The error may involve com.mobine.vnews.mapper.UserMapper.addUser-Inline\n### The error occurred while setting parameters\n### SQL: INSERT INTO user (username, password, telephone) VALUES (?,?,?,#{telephone)\n### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1\n; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"}
+[14:43:48:245] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on xuantang-cun with PID 27190 (/home/xuantang/IdeaProjects/VNews-SpringBoot/target/classes started by xuantang in /home/xuantang/IdeaProjects/VNews-SpringBoot)
+[14:43:48:249] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[14:43:49:863] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 1.774 seconds (JVM running for 2.26)
+[14:43:55:180] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":400,"message":"\n### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1\n### The error may involve com.mobine.vnews.mapper.UserMapper.addUser-Inline\n### The error occurred while setting parameters\n### SQL: INSERT INTO user (username, password, telephone) VALUES (?,?,?,#{telephone)\n### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1\n; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"}
+[14:44:29:680] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on xuantang-cun with PID 27333 (/home/xuantang/IdeaProjects/VNews-SpringBoot/target/classes started by xuantang in /home/xuantang/IdeaProjects/VNews-SpringBoot)
+[14:44:29:684] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[14:44:31:208] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 1.694 seconds (JVM running for 2.193)
+[14:44:35:403] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":400,"message":"\n### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1\n### The error may involve com.mobine.vnews.mapper.UserMapper.addUser-Inline\n### The error occurred while setting parameters\n### SQL: INSERT INTO user (username, password, telephone) VALUES (?,?,?,?\n### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1\n; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"}
+[14:45:23:840] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on xuantang-cun with PID 27540 (/home/xuantang/IdeaProjects/VNews-SpringBoot/target/classes started by xuantang in /home/xuantang/IdeaProjects/VNews-SpringBoot)
+[14:45:23:843] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[14:45:25:452] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 1.755 seconds (JVM running for 2.248)
+[14:45:28:422] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[14:45:28:426] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[06:54:23:132] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 8348 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[06:54:23:135] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[06:54:25:256] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.338 seconds (JVM running for 3.475)
+[07:05:20:350] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 6976 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[07:05:20:353] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[07:05:22:461] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.355 seconds (JVM running for 3.29)
+[07:14:26:962] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 9128 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[07:14:26:965] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[07:14:29:123] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.389 seconds (JVM running for 3.309)
+[07:17:54:270] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 2936 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[07:17:54:273] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[07:17:56:200] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.11 seconds (JVM running for 2.915)
+[07:23:11:953] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:23:11:960] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:35:234] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:35:234] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:36:256] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:36:257] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:36:983] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:36:984] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:37:498] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:37:499] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:37:968] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:37:969] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:38:478] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:38:478] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:38:870] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:38:871] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:39:317] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:39:318] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:39:693] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:39:693] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:40:028] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:40:028] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:40:332] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:40:332] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:40:654] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:40:655] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:40:908] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:40:909] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:41:239] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:41:240] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:41:488] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:41:488] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:41:838] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:41:839] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:42:074] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:42:074] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:42:316] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:42:317] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:42:598] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:42:599] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:47:346] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:47:346] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:48:145] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:48:146] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:48:807] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:48:808] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:49:284] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:49:284] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:49:679] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:49:680] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:50:108] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:50:109] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:50:466] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:50:466] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:57:476] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:57:477] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:58:096] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:58:096] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:58:543] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:58:543] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:58:847] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:58:848] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:59:047] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:59:048] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:59:229] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:59:230] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:59:457] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:59:457] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:25:59:689] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:25:59:690] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[07:26:00:073] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[07:26:00:074] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[14:21:59:283] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:37) - 1
+[14:21:59:284] [INFO] - com.mobine.vnews.service.UserService.register(UserService.java:46) - {"code":200,"message":"success"}
+[14:33:15:317] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 13592 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[14:33:15:320] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[14:33:17:237] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.099 seconds (JVM running for 3.139)
+[15:09:00:403] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 11044 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[15:09:00:406] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[15:09:02:511] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.289 seconds (JVM running for 3.13)
+[15:09:03:806] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":400,"message":"nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 37"}
+[15:12:30:159] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":400,"message":"nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 37"}
+[15:12:31:083] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":400,"message":"nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 37"}
+[15:12:35:537] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 9288 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[15:12:35:541] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[15:12:37:589] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.239 seconds (JVM running for 3.037)
+[15:12:38:518] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":400,"message":"nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 37"}
+[15:13:32:675] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":400,"message":"nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 37"}
+[15:13:33:396] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":400,"message":"nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 37"}
+[15:16:15:322] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 13360 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[15:16:15:326] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[15:16:17:308] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.171 seconds (JVM running for 3.033)
+[15:16:54:667] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 9132 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[15:16:54:670] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[15:16:56:587] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.084 seconds (JVM running for 2.953)
+[15:17:02:074] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - {"password":"abc","username":"abc"}
+[15:17:02:077] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:17:27:536] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:17:27:537] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:17:28:437] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:17:28:438] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:17:29:088] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:17:29:089] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:17:29:861] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:17:29:862] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:20:43:293] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 8144 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[15:20:43:296] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[15:20:45:304] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.185 seconds (JVM running for 2.981)
+[15:20:56:416] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":400}
+[15:22:20:947] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:57) - {"password":"abc","username":"abc"}
+[15:22:20:948] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":200,"content":"abc","message":"success"}
+[15:22:25:134] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":400}
+[15:25:32:920] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 12780 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[15:25:32:923] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[15:25:34:865] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.122 seconds (JVM running for 2.981)
+[15:25:41:352] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:67) - {"code":400}
+[15:26:01:470] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:67) - {"code":400}
+[15:26:03:162] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:67) - {"code":400}
+[15:26:03:846] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:67) - {"code":400}
+[15:26:55:958] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:67) - {"code":400}
+[15:26:56:626] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:67) - {"code":400}
+[15:26:57:213] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:67) - {"code":400}
+[15:26:59:935] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:67) - {"code":400}
+[15:27:24:426] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 1252 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[15:27:24:430] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[15:27:26:397] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.137 seconds (JVM running for 2.983)
+[15:27:31:985] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:31:989] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:27:37:772] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:37:773] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:27:38:848] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:38:849] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:27:39:599] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:39:599] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:27:41:007] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:41:007] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:27:41:565] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:41:565] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:27:46:088] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:46:088] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:27:46:988] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:46:989] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:27:47:446] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:47:447] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:27:52:754] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:52:755] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:27:53:419] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:53:419] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:27:53:638] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:53:638] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:27:54:003] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:56) - null
+[15:27:54:004] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:63) - {"code":200,"message":"success"}
+[15:28:46:929] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 10852 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[15:28:46:933] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[15:28:48:872] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.109 seconds (JVM running for 2.95)
+[15:28:54:114] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":400,"message":"ssss"}
+[15:29:16:431] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":400,"message":"ssss"}
+[15:29:16:875] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":400,"message":"ssss"}
+[15:29:19:636] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":400,"message":"ssss"}
+[15:29:59:186] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:57) - {"password":"abc","username":"abc"}
+[15:29:59:187] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":200,"content":"abc","message":"success"}
+[15:30:08:529] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":400,"message":"ssss"}
+[15:30:15:336] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:57) - {"password":"abc","username":"abc"}
+[15:30:15:337] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":200,"content":"abc","message":"success"}
+[15:30:20:218] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":400,"message":"ssss"}
+[15:30:25:390] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:57) - {"password":"abc","username":"abc"}
+[15:30:25:390] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":200,"content":"abc","message":"success"}
+[07:11:35:832] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:57) - {"password":"abc","username":"abc"}
+[07:11:35:844] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":200,"content":"abc","message":"success"}
+[07:11:44:456] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":400,"message":"ssss"}
+[07:21:38:128] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting VNewsApplication on DESKTOP-THKB929 with PID 16936 (C:\Users\123\IdeaProjects\VNews-SpringBoot-master\target\classes started by 123 in C:\Users\123\IdeaProjects\VNews-SpringBoot-master)
+[07:21:38:132] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:593) - No active profile set, falling back to default profiles: default
+[07:21:40:294] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started VNewsApplication in 2.345 seconds (JVM running for 3.377)
+[07:21:56:063] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":400,"message":"login fail"}
+[07:22:05:402] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:57) - {"password":"abc","username":"abc"}
+[07:22:05:402] [INFO] - com.mobine.vnews.service.UserService.login(UserService.java:64) - {"code":200,"content":"abc","message":"login success"}

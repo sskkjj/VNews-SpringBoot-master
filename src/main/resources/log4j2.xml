@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN" monitorInterval="30">
+    <appenders>
+        <console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
+        </console>
+
+        <RollingFile name="INFO_ROLLING_FILE"
+                     fileName="log/vnews.log"
+                     filePattern="log/%d{yyyy-MM-dd}-vnews-rolling.log">
+            <PatternLayout>
+                <Pattern>[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n </Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="24"/>
+                <SizeBasedTriggeringPolicy size="1024 KB"/>
+            </Policies>
+        </RollingFile>
+    </appenders>
+    <loggers>
+        <Logger name="com.mobine.vnews" level="INFO">
+            <appender-ref ref="INFO_ROLLING_FILE" />
+        </Logger>
+        <root level="INFO">
+            <appender-ref ref="Console"/>
+        </root>
+    </loggers>
+</configuration>
