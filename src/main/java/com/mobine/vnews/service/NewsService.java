@@ -9,6 +9,7 @@ import com.mobine.vnews.module.bean.favorite_news;
 import com.mobine.vnews.module.bean.User;
 import com.mobine.vnews.util.IdUtils;
 import com.sun.org.apache.bcel.internal.generic.NEW;
+import com.sun.org.apache.bcel.internal.generic.Select;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -123,6 +124,44 @@ public class NewsService {
             if(res==0){
                 code=400;
                 message="cannot add favorite news";
+            }
+        }catch (Exception e){
+            code=500;
+            message=e.getMessage();
+        }
+        response.setCode(code);
+        response.setMessage(message);
+        response.setContent("");
+        return  response;
+    }
+    public  BasicResponse<String> checkFavoriteNews(favorite_news news){
+        BasicResponse<String> response=new BasicResponse<>();
+        int code=200;
+        String message="favorite news exists";
+        try{
+            favorite_news res=newsMapper.checkFavoriteNews(news);
+            if(res==null){
+                code=400;
+                message="favorite news does not exist";
+            }
+        }catch (Exception e){
+            code=500;
+            message=e.getMessage();
+        }
+        response.setCode(code);
+        response.setMessage(message);
+        response.setContent("");
+        return  response;
+    }
+    public  BasicResponse<String> deleteFavoriteNews(favorite_news news){
+        BasicResponse<String> response=new BasicResponse<>();
+        int code=200;
+        String message="delete favorite news success";
+        try{
+            int res=newsMapper.deleteFavoriteNews(news);
+            if(res==0){
+                code=400;
+                message="fail to delete favorite news";
             }
         }catch (Exception e){
             code=500;

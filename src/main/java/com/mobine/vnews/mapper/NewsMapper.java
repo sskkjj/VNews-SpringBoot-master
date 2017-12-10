@@ -23,5 +23,9 @@ public  interface NewsMapper{
     News getNewsByFavoriteNewsID(favorite_news news);
     @Insert("INSERT INTO like_news (userID,newsID) VALUES (#{userID},#{newsID})")
     int addFavoriteNews(favorite_news news);
+    @Select("SELECT userID,newsID FROM like_news WHERE userID=#{userID} AND newsID=#{newsID}")
+    favorite_news checkFavoriteNews(favorite_news news);
+    @Delete("DELETE FROM like_news WHERE userID=#{userID} AND newsID=#{newsID}")
+    int deleteFavoriteNews(favorite_news news);
 }
 
