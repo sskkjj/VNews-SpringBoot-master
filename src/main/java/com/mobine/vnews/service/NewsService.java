@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import sun.awt.geom.AreaOp;
 
+import javax.xml.ws.Response;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -111,6 +112,25 @@ public class NewsService {
         }
         response.setCode(code);
         response.setMessage(message);
+        return  response;
+    }
+    public BasicResponse<String> addFavoriteNews(favorite_news news){
+        BasicResponse<String>response=new BasicResponse<>();
+        int code=200;
+        String message="add favorite news success";
+        try{
+            int res=newsMapper.addFavoriteNews(news);
+            if(res==0){
+                code=400;
+                message="cannot add favorite news";
+            }
+        }catch (Exception e){
+            code=500;
+            message=e.getMessage();
+        }
+        response.setCode(code);
+        response.setMessage(message);
+        response.setContent("");
         return  response;
     }
 }

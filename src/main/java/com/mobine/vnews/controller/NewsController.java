@@ -43,9 +43,16 @@ public class NewsController {
         return newsService.detail(news);
     }
     @RequestMapping(value="/{user_id}/likes",method = RequestMethod.GET)
-    public BasicResponse<List<News>> favoriteNews(@PathVariable("user_id") String user_id,@RequestParam("category")String category,@RequestParam("start") int start,@RequestParam("count") int count){
+    public BasicResponse<List<News>> favoriteNews(@PathVariable("user_id") String user_id,@RequestParam("category")String category, @RequestParam("start") int start,@RequestParam("count") int count){
         favorite_news news=new favorite_news();
         news.setUserID(user_id);
         return newsService.favoriteNews(news,start,count,category);
+    }
+    @RequestMapping(value="/{user_id}/like/{news_id}",method = RequestMethod.POST)
+    public BasicResponse<String> addFavoriteNews(@PathVariable("user_id") String user_id,@PathVariable("news_id") int news_id){
+        favorite_news news=new favorite_news();
+        news.setUserID(user_id);
+        news.setNewsID(news_id);
+        return newsService.addFavoriteNews(news);
     }
 }

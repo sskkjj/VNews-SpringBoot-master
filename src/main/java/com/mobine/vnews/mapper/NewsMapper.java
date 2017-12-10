@@ -21,5 +21,7 @@ public  interface NewsMapper{
     List<favorite_news>  getFavoriteNewsID(favorite_news news);
     @Select("SELECT ID,title,author,description,image,publishedAt,source,content,level,type FROM news WHERE ID=#{newsID}")
     News getNewsByFavoriteNewsID(favorite_news news);
+    @Insert("INSERT INTO like_news (userID,newsID) VALUES (#{userID},#{newsID})")
+    int addFavoriteNews(favorite_news news);
 }
 
