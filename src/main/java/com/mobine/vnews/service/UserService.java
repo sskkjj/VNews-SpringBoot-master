@@ -1,6 +1,7 @@
 package com.mobine.vnews.service;
 
 
+import com.alibaba.fastjson.JSONObject;
 import com.mobine.vnews.mapper.UserMapper;
 import com.mobine.vnews.module.BasicResponse;
 import com.mobine.vnews.module.bean.User;
@@ -10,6 +11,16 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import static org.apache.logging.log4j.core.config.LoggerConfig.ROOT;
 
 /**
  * @author Create by xuantang
@@ -65,14 +76,62 @@ public class UserService {
         log.info(response.toString());
         return response;
     }
-    public String delete(User user){
-        String message="success";
+    public BasicResponse<String> checkPhone(User user){
+        BasicResponse<String>response=new BasicResponse<>();
+        int code=400;
+        String message="telephone has been used";
+        response.setContent("");
         try{
-            int result=userMapper.removeUserByUsername(user);
-            log.info(result);
+            User res=userMapper.checkPhone(user);
+            if(res==null){
+                code =200;
+                message="telephone available";
+            }
         }catch (Exception e){
-            message="fail";
+            message=e.getMessage();
+            code=500;
         }
-        return  message;
+        response.setCode(code);
+        response.setMessage(message);
+        return response;
+    }
+    public BasicResponse<String> updateUser(User user){
+        BasicResponse<String>response=new BasicResponse<>();
+        int code=200;
+        String message="update success";
+        response.setContent("");
+        try{
+            int res=userMapper.updateUser(user);
+            if(res==0){
+                code=400;
+                message="update fail";
+            }
+        }catch (Exception e){
+            code=500;
+            message=e.getMessage();
+        }
+        response.setCode(code);
+        response.setMessage(message);
+        return  response;
+    }
+    public BasicResponse<String>updatePhoto(User user, MultipartFile file){
+        BasicResponse<String>response=new BasicResponse<>();
+        int code=200;
+        String message="update photo success";
+        response.setContent("");
+        try{
+            String filename=file.getOriginalFilename();
+            byte[]bytes=file.getBytes();
+            BufferedOutputStream buffStream=new BufferedOutputStream(new FileOutputStream(new File("F:/cp/+"+filename)));
+            buffStream.write(bytes);
+            buffStream.close();
+            int res=userMapper.updatePhoto(user);
+        }catch (IOException|RuntimeException e ){
+            code=400;
+            message=e.getMessage();
+        }
+        response.setCode(code);
+        response.setMessage(message);
+        return response;
     }
 }

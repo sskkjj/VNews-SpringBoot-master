@@ -1,8 +1,8 @@
 package com.mobine.vnews.module.bean;
 
-
+import org.apache.logging.log4j.Logger;
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-
 /**
  * Created by xuantang on 11/27/17.
  */
@@ -18,7 +18,8 @@ public class User {
     private String telephone;
     private String motto;
     private String info;
-
+    public  User(){
+    }
     public User(String username, String password, String telephone) {
         this.username = username;
         this.password = password;
@@ -28,10 +29,26 @@ public class User {
         this.username=username;
         this.password=password;
     }
-    public User(String username){
-        this.username=username;
+    public User(String telephone){
+        this.telephone=telephone;
     }
-
+    public void print(){
+        System.out.println(this.username);
+        System.out.println(this.password);
+        System.out.println(this.email);
+        System.out.println(this.birthday);
+    }
+    public void analyzeJson(JSON obj){
+        JSONObject res=JSON.parseObject(obj.toJSONString());
+        try{
+            this.password=res.getString("password");
+            this.email=res.getString("email");
+            this.sex=res.getString("sex");
+            this.birthday=res.getString("birthday");
+        }catch (Exception e){
+            e.getMessage();
+        }
+    }
     public String getID() {
         return ID;
     }
