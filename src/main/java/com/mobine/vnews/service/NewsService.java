@@ -5,6 +5,7 @@ import com.mobine.vnews.mapper.UserMapper;
 import com.mobine.vnews.module.BasicResponse;
 import com.mobine.vnews.module.bean.News;
 import com.mobine.vnews.module.bean.view_news;
+import com.mobine.vnews.module.bean.favorite_news;
 import com.mobine.vnews.module.bean.User;
 import com.mobine.vnews.util.IdUtils;
 import com.sun.org.apache.bcel.internal.generic.NEW;
@@ -55,7 +56,7 @@ public class NewsService {
             List<view_news> allNews=newsMapper.hotNews();
             ArrayList<News> hotnews=new ArrayList<>();
             for(int i=0;i<count;i++){
-                hotnews.add(newsMapper.getNewsByID(allNews.get(i)));
+                hotnews.add(newsMapper.getNewsByViewNewsID(allNews.get(i)));
             }
             response.setContent(hotnews);
         }catch (Exception e){
@@ -71,13 +72,39 @@ public class NewsService {
         int code=200;
         String message="success";
         try{
-            News info=newsMapper.getNewsByNewID(news);
+            News info=newsMapper.getNewsByNewsID(news);
             if(info==null){
                 code=400;
                 message="cannot find the news_id";
             }else{
                 response.setContent(info);
             }
+        }catch (Exception e){
+            code=500;
+            message=e.getMessage();
+        }
+        response.setCode(code);
+        response.setMessage(message);
+        return  response;
+    }
+    public BasicResponse<List<News>> favoriteNews(favorite_news news,int start,int count,String category){
+        BasicResponse<List<News>> response=new BasicResponse<>();
+        int code=200;
+        String message="get favorite news success";
+        try{
+            List<favorite_news> newsContainer= newsMapper.getFavoriteNewsID(news);
+            ArrayList<News>newsInfo=new ArrayList<News>();
+            for(int i=0;i<newsContainer.size();i++){
+                News element=newsMapper.getNewsByFavoriteNewsID(newsContainer.get(i));
+                if(category.equals(element.getType())){
+                    newsInfo.add(element);
+                }
+            }
+            ArrayList<News>selectedInfo=new ArrayList<News>();
+            for(int i=start;i<start+count;i++){
+                selectedInfo.add(newsInfo.get(i));
+            }
+            response.setContent(selectedInfo);
         }catch (Exception e){
             code=500;
             message=e.getMessage();

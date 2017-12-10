@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.mobine.vnews.mapper.UserMapper;
 import com.mobine.vnews.module.BasicResponse;
 import com.mobine.vnews.module.bean.News;
+import com.mobine.vnews.module.bean.favorite_news;
 import com.mobine.vnews.module.bean.User;
 import com.mobine.vnews.service.NewsService;
 import com.mobine.vnews.service.UserService;
@@ -40,5 +41,11 @@ public class NewsController {
         News news=new News();
         news.setID(ID);
         return newsService.detail(news);
+    }
+    @RequestMapping(value="/{user_id}/likes",method = RequestMethod.GET)
+    public BasicResponse<List<News>> favoriteNews(@PathVariable("user_id") String user_id,@RequestParam("category")String category,@RequestParam("start") int start,@RequestParam("count") int count){
+        favorite_news news=new favorite_news();
+        news.setUserID(user_id);
+        return newsService.favoriteNews(news,start,count,category);
     }
 }
