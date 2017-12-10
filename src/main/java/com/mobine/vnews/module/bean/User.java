@@ -38,17 +38,6 @@ public class User {
         System.out.println(this.email);
         System.out.println(this.birthday);
     }
-    public void analyzeJson(JSON obj){
-        JSONObject res=JSON.parseObject(obj.toJSONString());
-        try{
-            this.password=res.getString("password");
-            this.email=res.getString("email");
-            this.sex=res.getString("sex");
-            this.birthday=res.getString("birthday");
-        }catch (Exception e){
-            e.getMessage();
-        }
-    }
     public String getID() {
         return ID;
     }
