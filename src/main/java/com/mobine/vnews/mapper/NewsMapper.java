@@ -2,6 +2,7 @@ package com.mobine.vnews.mapper;
 import com.mobine.vnews.module.bean.News;
 import com.mobine.vnews.module.bean.User;
 import com.sun.org.apache.bcel.internal.generic.NEW;
+import com.mobine.vnews.module.bean.record_news;
 import org.apache.ibatis.annotations.*;
 import com.mobine.vnews.module.bean.view_news;
 import com.mobine.vnews.module.bean.favorite_news;
@@ -27,5 +28,7 @@ public  interface NewsMapper{
     favorite_news checkFavoriteNews(favorite_news news);
     @Delete("DELETE FROM like_news WHERE userID=#{userID} AND newsID=#{newsID}")
     int deleteFavoriteNews(favorite_news news);
+    @Select("SELECT newsID FROM record_news WHERE newsID=#{newsID}")
+    record_news checkViewedNews(record_news news);
 }
 

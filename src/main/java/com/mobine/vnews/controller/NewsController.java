@@ -4,6 +4,8 @@ import com.alibaba.fastjson.JSON;
 import com.mobine.vnews.mapper.UserMapper;
 import com.mobine.vnews.module.BasicResponse;
 import com.mobine.vnews.module.bean.News;
+import com.mobine.vnews.module.bean.view_news;
+import com.mobine.vnews.module.bean.record_news;
 import com.mobine.vnews.module.bean.favorite_news;
 import com.mobine.vnews.module.bean.User;
 import com.mobine.vnews.service.NewsService;
@@ -68,5 +70,11 @@ public class NewsController {
         news.setUserID(user_id);
         news.setNewsID(news_id);
         return newsService.deleteFavoriteNews(news);
+    }
+    @RequestMapping(value = "/view/{news_id}",method = RequestMethod.POST)
+    public BasicResponse<String> checkViewedNews(@PathVariable("news_id") int news_id){
+        record_news news=new record_news();
+        news.setNewsID(news_id);
+        return  newsService.checkViewedNews(news);
     }
 }

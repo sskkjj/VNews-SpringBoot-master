@@ -5,6 +5,7 @@ import com.mobine.vnews.mapper.UserMapper;
 import com.mobine.vnews.module.BasicResponse;
 import com.mobine.vnews.module.bean.News;
 import com.mobine.vnews.module.bean.view_news;
+import com.mobine.vnews.module.bean.record_news;
 import com.mobine.vnews.module.bean.favorite_news;
 import com.mobine.vnews.module.bean.User;
 import com.mobine.vnews.util.IdUtils;
@@ -170,6 +171,24 @@ public class NewsService {
         response.setCode(code);
         response.setMessage(message);
         response.setContent("");
+        return  response;
+    }
+    public BasicResponse<String> checkViewedNews(record_news news){
+        BasicResponse<String> response=new BasicResponse<>();
+        int code=200;
+        String message="the news has been viewed";
+        try{
+            record_news res=newsMapper.checkViewedNews(news);
+            if(res==null){
+                code=400;
+                message="the news has not been viewed";
+            }
+        }catch ( Exception e){
+            code=500;
+            message=e.getMessage();
+        }
+        response.setCode(code);
+        response.setMessage(message);
         return  response;
     }
 }
