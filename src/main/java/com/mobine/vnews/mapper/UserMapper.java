@@ -32,5 +32,6 @@ public interface UserMapper {
 
     @Delete("DELETE FROM user WHERE username = #{username}")
     int removeUserByTelaphone(User user);
-
+    @Select("SELECT ID,username,password,email,sex,birthday,image,telephone,motto,info FROM user WHERE username=#{username}")
+    User getUser(User user);
 }

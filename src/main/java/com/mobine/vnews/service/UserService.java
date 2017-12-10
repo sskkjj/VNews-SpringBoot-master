@@ -122,9 +122,10 @@ public class UserService {
         try{
             String filename=file.getOriginalFilename();
             byte[]bytes=file.getBytes();
-            BufferedOutputStream buffStream=new BufferedOutputStream(new FileOutputStream(new File("F:/cp/+"+filename)));
+            BufferedOutputStream buffStream=new BufferedOutputStream(new FileOutputStream(new File("F:/cp/"+filename)));
             buffStream.write(bytes);
             buffStream.close();
+            user.setImage("F:/cp/"+filename);
             int res=userMapper.updatePhoto(user);
         }catch (IOException|RuntimeException e ){
             code=400;
@@ -133,5 +134,21 @@ public class UserService {
         response.setCode(code);
         response.setMessage(message);
         return response;
+    }
+    public BasicResponse<User> getUser(User user){
+        BasicResponse<User>response=new BasicResponse<>();
+        int code=200;
+        String message="get information success";
+        response.setContent(new User());
+        try{
+            User myUser=userMapper.getUser(user);
+            response.setContent(myUser);
+        }catch (Exception e){
+            code=400;
+            message=e.getMessage();
+        }
+        response.setCode(code);
+        response.setMessage(message);
+        return  response;
     }
 }

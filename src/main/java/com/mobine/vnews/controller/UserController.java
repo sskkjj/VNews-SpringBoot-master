@@ -45,13 +45,13 @@ public class UserController {
         User user=new User(username,password);
         return userService.login(user);
     }
-    @RequestMapping(value="/user/{telephone}",method=RequestMethod.GET)
+    @RequestMapping(value="/user/tel/{telephone}",method=RequestMethod.GET)
     public BasicResponse<String> checkPhone(@PathVariable("telephone") String telephone){
         User user=new User(telephone);
         return userService.checkPhone(user);
     }
     @RequestMapping(value="/user/{username}",method = RequestMethod.PUT)
-    public BasicResponse<String>updateUser(@PathVariable("username")String username, @RequestBody User object, HttpServletRequest request){
+    public BasicResponse<String>updateUser(@PathVariable("username")String username, @RequestBody User object){
         object.setUsername(username);
         object.print();
         return userService.updateUser(object);
@@ -61,6 +61,12 @@ public class UserController {
         User user=new User();
         user.setUsername(username);
         return userService.updatePhoto(user,file);
+    }
+    @RequestMapping(value="/user/{username}",method=RequestMethod.GET)
+    public BasicResponse<User>getUser(@PathVariable("username") String username){
+        User user=new User();
+        user.setUsername(username);
+        return userService.getUser(user);
     }
     //@RequestMapping(value="/user/{telephone}",method = RequestMethod.GET)
    // public
