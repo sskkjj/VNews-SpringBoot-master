@@ -3,7 +3,7 @@ package com.mobine.vnews.controller;
 import com.alibaba.fastjson.JSON;
 import com.mobine.vnews.mapper.UserMapper;
 import com.mobine.vnews.module.BasicResponse;
-import com.mobine.vnews.module.bean.User;
+import com.mobine.vnews.module.bean.*;
 import com.mobine.vnews.service.UserService;
 import org.apache.logging.log4j.core.util.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
