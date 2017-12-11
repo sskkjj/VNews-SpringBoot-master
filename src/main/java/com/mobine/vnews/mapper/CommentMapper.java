@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 @Mapper
-public interface ConmentMapper{
+public interface CommentMapper {
     @Select("SELECT ID,fromID,toID,content,timestamp,newsID,floor FROM comment WHERE newsID=#{newsID} ORDER BY floor ASC")
     List<Comment>getComment(Comment comment);
     @Insert("INSERT INTO like_comment (userID,commentID) VALUES (#{user_id},#{comment_id})")

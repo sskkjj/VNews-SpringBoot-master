@@ -24,11 +24,17 @@ import static org.apache.logging.log4j.core.config.LoggerConfig.ROOT;
 public class NewsController {
     @Autowired
     NewsService newsService;
+    @RequestMapping(value="",method = RequestMethod.GET)
+    public BasicResponse<List<News>> allCategoryNews(@RequestParam("start")int start,@RequestParam("count")int count){
+        News news=new News();
+        news.setType("");
+        return newsService.categoryNews(news,start,count);
+    }
     @RequestMapping(value="{category}",method = RequestMethod.GET)
-    public BasicResponse<List<News>> CategoryNews(@PathVariable("category") String category){
+    public BasicResponse<List<News>> CategoryNews(@PathVariable("category") String category,@RequestParam("start")int start,@RequestParam("count")int count){
         News news=new News();
         news.setType(category);
-        return newsService.categoryNews(news);
+        return newsService.categoryNews(news,start,count);
     }
     @RequestMapping(value="/hots",method = RequestMethod.GET)
     public BasicResponse<List<News>> hotNews(@RequestParam("count") int count){

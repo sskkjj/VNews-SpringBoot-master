@@ -32,17 +32,26 @@ public class NewsService {
     @Autowired
     NewsMapper newsMapper;
     private static  Logger log=LogManager.getLogger(NewsService.class);
-    public BasicResponse<List<News>>  categoryNews(News news){
+    public BasicResponse<List<News>>  categoryNews(News news,int start,int count){
         BasicResponse<List<News>> response=new BasicResponse<>();
         int code=200;
         String message="get category news success";
         try{
-            List<News> allInfo=newsMapper.getNewsByType(news);
+            ArrayList<News>allInfo=new ArrayList<>();
+            if(news.getType().isEmpty()){
+                allInfo=(ArrayList<News>) newsMapper.getAllNews(news);
+            }else{
+                allInfo=(ArrayList<News>) newsMapper.getNewsByType(news);
+            }
             if(allInfo.isEmpty()){
                 code=400;
                 message="category doesn't exist";
             }
-            response.setContent(allInfo);
+            ArrayList<News>selectedInfo=new ArrayList<>();
+            for(int i=start;i<count;i++){
+                selectedInfo.add(allInfo.get(i));
+            }
+            response.setContent(selectedInfo);
         } catch (Exception e){
             code=500;
             message=e.getMessage();

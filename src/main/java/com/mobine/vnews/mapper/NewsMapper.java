@@ -6,10 +6,14 @@ import com.mobine.vnews.module.bean.record_news;
 import org.apache.ibatis.annotations.*;
 import com.mobine.vnews.module.bean.view_news;
 import com.mobine.vnews.module.bean.favorite_news;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Mapper
 public  interface NewsMapper{
+    @Select("SELECT ID,title,author,description,image,publishedAt,source,content,level,type FROM news ")
+    List<News> getAllNews(News news);
     @Select("SELECT ID,title,author,description,image,publishedAt,source,content,level,type FROM news WHERE type=#{type}")
     List<News> getNewsByType(News news);
     @Select("SELECT newsID FROM view_news ORDER BY count DESC")

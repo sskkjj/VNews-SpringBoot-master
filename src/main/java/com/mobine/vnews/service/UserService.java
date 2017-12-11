@@ -47,7 +47,7 @@ public class UserService {
             int res = userMapper.addUser(user);
             log.info(res);
         } catch (Exception e) {
-            code = 400;
+            code = 500;
             message = e.getMessage();
         }
         // set values
@@ -67,7 +67,7 @@ public class UserService {
             response.setContent("");
             log.info(res);
         }catch (Exception e){
-            code=400;
+            code=500;
             response.setContent("");
             message="login fail";
         }
@@ -128,7 +128,7 @@ public class UserService {
             user.setImage("F:/cp/"+filename);
             int res=userMapper.updatePhoto(user);
         }catch (IOException|RuntimeException e ){
-            code=400;
+            code=500;
             message=e.getMessage();
         }
         response.setCode(code);
@@ -144,7 +144,7 @@ public class UserService {
             User myUser=userMapper.getUser(user);
             response.setContent(myUser);
         }catch (Exception e){
-            code=400;
+            code=500;
             message=e.getMessage();
         }
         response.setCode(code);
