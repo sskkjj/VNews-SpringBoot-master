@@ -10,4 +10,6 @@ public interface ConmentMapper{
     List<Comment>getComment(Comment comment);
     @Insert("INSERT INTO like_comment (userID,commentID) VALUES (#{user_id},#{comment_id})")
     int likeComment(like_comment comment);
+    @Delete("DELETE FROM like_comment WHERE userID=#{user_id} AND commentID=#{comment_id}")
+    int dislikeComment(like_comment comment);
 }
